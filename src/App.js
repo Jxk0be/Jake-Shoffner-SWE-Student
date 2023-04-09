@@ -1,10 +1,13 @@
-import './App.css';
-import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
+import Hero from './components/Hero';
+import MobileNav from './components/MobileNav';
 
 function App() {
   return (
-    <div>
-      <Navbar />
+    <div className='flex text-white'>
+      <MobileNav />
+      <Sidebar />
+      <Hero />
     </div>
   );
 }
