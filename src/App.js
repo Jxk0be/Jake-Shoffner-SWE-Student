@@ -4,7 +4,7 @@ import MobileNav from './components/MobileNav';
 
 function App() {
   return (
-    <div className='flex text-white'>
+    <div className='flex text-black'>
       <MobileNav />
       <Sidebar />
       <Hero />
