@@ -8,35 +8,35 @@ const Navbar = () => {
   const navArray = nav.split("");
 
   return (
-    <div className={`hidden duration-300 bg-[#121212] text-white drop-shadow-2xl h-screen w- relative md:flex justify-center md:w-[250px] ${sidebar ? 'ml-[-196px]' : ''}`}>
+    <div className={`hidden duration-300 bg-[#17181a] drop-shadow-md h-screen relative lg:flex justify-center md:w-[250px] ${sidebar ? 'ml-[-196px]' : ''}`}>
       {/* This is the click-able icon that opens the sidebar */}
-      <div className='right-1.5 duration-300 absolute hover:text-[#b3b3b3] font-bold top-[50px] text-[#ffffff] hover:rotate-90'>
+      <div className='right-1.5 duration-300 absolute hover:text-[#b3b3b3] text-[#59A5D8] top-[50px] hover:rotate-90'>
           <h1 className='cursor-pointer' onClick={() => setSidebar(!sidebar)}><Icon className='text-[35px]' icon="game-icons:multi-directions" /></h1>
       </div>
 
       <div className='absolute top-[152px] ml-[-30px] left-4 flex justify-between flex-col h-[280px]'>
 
-        <div onClick={() => setSidebar(!sidebar)} className='flex group justify-between w-[160px] bg-[#212121] hover:bg-[#535353] py-2 rounded-xl pr-2 pl-5 hover:scale-105 cursor-pointer duration-300'>
+        <div onClick={() => setSidebar(!sidebar)} className='flex group justify-between w-[160px] bg-[#212121] hover:bg-[#59A5D8] py-2 rounded-xl pr-2 pl-5 hover:scale-105 cursor-pointer duration-300'>
           <Icon className='text-2xl group-hover:rotate-90 duration-300' icon="material-symbols:verified" />
           <h1>About Me</h1>
         </div>
 
-        <div onClick={() => setSidebar(!sidebar)} className='flex group justify-between w-[160px] bg-[#212121] hover:bg-[#535353] py-2 rounded-xl pr-2 pl-5 hover:scale-105 cursor-pointer duration-300'>
+        <div onClick={() => setSidebar(!sidebar)} className='flex group justify-between w-[160px] bg-[#212121] hover:bg-[#59A5D8] py-2 rounded-xl pr-2 pl-5 hover:scale-105 cursor-pointer duration-300'>
           <Icon className='text-2xl group-hover:rotate-90 duration-300' icon="cryptocurrency:xp" />
           <h1>Experience</h1>
         </div>
 
-        <div onClick={() => setSidebar(!sidebar)} className='flex group justify-between w-[160px] bg-[#212121] hover:bg-[#535353] py-2 rounded-xl pr-2 pl-5 hover:scale-105 cursor-pointer duration-300'>
+        <div onClick={() => setSidebar(!sidebar)} className='flex group justify-between w-[160px] bg-[#212121] hover:bg-[#59A5D8] py-2 rounded-xl pr-2 pl-5 hover:scale-105 cursor-pointer duration-300'>
           <Icon className='text-2xl group-hover:rotate-90 duration-300' icon="file-icons:ionic-project" />
           <h1>Projects</h1>
         </div>
 
-        <div onClick={() => setSidebar(!sidebar)} className='flex group justify-between w-[160px] bg-[#212121] hover:bg-[#535353] py-2 rounded-xl pr-2 pl-5 hover:scale-105 cursor-pointer duration-300'>
+        <div onClick={() => setSidebar(!sidebar)} className='flex group justify-between w-[160px] bg-[#212121] hover:bg-[#59A5D8] py-2 rounded-xl pr-2 pl-5 hover:scale-105 cursor-pointer duration-300'>
           <Icon className='text-2xl group-hover:rotate-90 duration-300' icon="mdi:email-open" />
           <h1>Email</h1>
         </div>
 
-        <div onClick={() => setSidebar(!sidebar)} className='flex group justify-between w-[160px] bg-[#212121] hover:bg-[#535353] py-2 rounded-xl pr-2 pl-5 hover:scale-105 cursor-pointer duration-300'>
+        <div onClick={() => setSidebar(!sidebar)} className='flex group justify-between w-[160px] bg-[#212121] hover:bg-[#59A5D8] py-2 rounded-xl pr-2 pl-5 hover:scale-105 cursor-pointer duration-300'>
           <Icon className='text-2xl group-hover:rotate-90 duration-300' icon="uil:linkedin" />
           <h1>Linkedin</h1>
         </div>
