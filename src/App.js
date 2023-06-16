@@ -1,13 +1,19 @@
 import Sidebar from './components/Sidebar';
 import Hero from './components/Hero';
 import MobileNav from './components/MobileNav';
+import About from './components/About';
 
 function App() {
   return (
-    <div className='flex text-[#F5EFED]'>
+    <div className='text-[#F5EFED]'>
       <MobileNav />
-      <Sidebar />
-      <Hero />
+
+      <div className='flex'>
+        <Sidebar />
+        <Hero />
+      </div>
+
+      <About />
     </div>
   );
 }
