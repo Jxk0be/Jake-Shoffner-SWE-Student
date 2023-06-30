@@ -88,7 +88,9 @@
            "description": "Currently working on core functionality of the bot. Its main purpose will be to manage polling, authentication, and small games."
         },
         {
-
+            "title": "College Club Watch Party Web Application",
+            "techStack": "Svelte, TailwindCSS, ConsumetAPI",
+            "description": "Project currently on pause for the summer. The main purpose of this web application is to have an easily accessible tool for the club to search for shows and add them into a list to be randomized for weekly watch parties."
         }
     ]
 }
