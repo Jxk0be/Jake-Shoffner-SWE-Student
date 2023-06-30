@@ -13,7 +13,7 @@ function App() {
       <MobileNav />
       <div className='flex'>
         <Sidebar />
-          <div className='w-full h-screen flex justify-between items-center flex-col pb-11 md:pb-0'>
+          <div className='w-full md:h-screen h-full flex justify-between items-center flex-col md:pb-0'>
           <Routes>
             <Route index element={<Hero />} />
             <Route path="/home" element={<Hero />} />
