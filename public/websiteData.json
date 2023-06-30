@@ -1,0 +1,112 @@
+{
+    "experiences": [
+        {
+            "jobTitle": "",
+            "company": "",
+            "location": "",
+            "date": "",
+            "descriptions": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "jobTitle": "",
+            "company": "",
+            "location": "",
+            "date": "",
+            "descriptions": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "jobTitle": "",
+            "company": "",
+            "location": "",
+            "date": "",
+            "descriptions": [
+                "",
+                "",
+                ""
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "title": "Web-Based Chess Engine",
+            "techStack": "C++, WebAssembly, JavaScript, TailwindCSS, Svelte",
+            "descriptions": [
+                "A group project for our software engineering course over a semester-long period.",
+                "Created interactive chess board, and UIs for pawn promotion and color selection.",
+                "Developed logical checks for valid moves while connecting our custom chess engine with the front-end chess board.",
+                "Built a complete site around the chess board."
+            ]
+        },
+        {
+            "title": "Personal Website React Application",
+            "techStack": "React, TailwindCSS",
+            "descriptions": [
+                "My first project learning about front-end frameworks, meant to be updated as I built more things.",
+                "Developed completely with ReactJS and TailwindCSS.",
+                "Used some additional React packages such as React-Typed and React-Scroll."
+            ]
+        },
+        {
+            "title": "YouTube Metadata Machine Learning Research Project",
+            "techStack": "Python, Pandas, scikit-learn, Jupyter Notebook",
+            "descriptions": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "title": "",
+            "techStack": "",
+            "descriptions": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "title": "",
+            "techStack": "",
+            "descriptions": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "title": "",
+            "techStack": "",
+            "descriptions": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "title": "",
+            "techStack": "",
+            "descriptions": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "title": "",
+            "techStack": "",
+            "descriptions": [
+                "",
+                "",
+                ""
+            ]
+        }
+    ]
+}

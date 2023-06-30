@@ -1,7 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import Hero from './pages/Hero';
-import About from './pages/About';
 import Experience from './pages/Experience';
 import Projects from './pages/Projects';
 import MobileNav from './components/MobileNav';
@@ -17,7 +16,6 @@ function App() {
           <Routes>
             <Route index element={<Hero />} />
             <Route path="/home" element={<Hero />} />
-            <Route path="/about" element={<About />} />
             <Route path="/experience" element={<Experience />} />
             <Route path="/projects" element={<Projects />} />
           </Routes>
