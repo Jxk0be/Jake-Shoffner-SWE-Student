@@ -7,6 +7,7 @@ const Hero = () => {
       <div className='grid md:grid-rows-1 h-full grid-flow-col w-full grid-rows-2 m-[5vh] gap-x-10 gap-y-12 px-4 md:px-0'>
                   
         <div className='flex flex-col justify-center md:min-w-[550px] md:h-full h-[300px]'>
+
             <h1 className='md:text-4xl grad font-[400] text-3xl drop-shadow-lg'>Hello, I'm</h1>
             <h1 className='capitalize font-[700] md:text-6xl text-5xl drop-shadow-lg'>Jake Shoffner</h1>
             <Typed className="text-[#59A5D8] md:text-4xl font-[500] text-2xl" strings={['Software engineer...', 'Problem solver...', 'Self-proclaimed comedian...']} typeSpeed={65} loop backDelay={1800} backSpeed={50}/>
