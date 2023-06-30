@@ -43,7 +43,9 @@
                 "Created interactive chess board, and UIs for pawn promotion and color selection.",
                 "Developed logical checks for valid moves while connecting our custom chess engine with the front-end chess board.",
                 "Built a complete site around the chess board."
-            ]
+            ],
+            "link": "https://github.com/utk-cs340-fall22/Chess",
+            "image": "./images/chessWebsiteGraphic.png"
         },
         {
             "title": "Personal Website React Application",
@@ -52,61 +54,41 @@
                 "My first project learning about front-end frameworks, meant to be updated as I built more things.",
                 "Developed completely with ReactJS and TailwindCSS.",
                 "Used some additional React packages such as React-Typed and React-Scroll."
-            ]
+            ],
+            "link": "https://jxk0be.github.io/Jake-Shoffner/",
+            "image": "./images/websiteThumbnail.png"
         },
         {
             "title": "YouTube Metadata Machine Learning Research Project",
             "techStack": "Python, Pandas, scikit-learn, Jupyter Notebook",
             "descriptions": [
-                "",
-                "",
-                ""
-            ]
+                "Addressed the challenge online creators face with trying to find success on YouTube.",
+                "Used predictive modeling techniques such as regression and classification to identify key factors of success.",
+                "Created a research poster and two-page abstract detailing our findings."
+            ],
+            "link": "https://github.com/Jxk0be/YouTube-Metadata-ML-Research-Project",
+            "image": "./images/researchPaper.png"
         },
         {
-            "title": "",
-            "techStack": "",
+            "title": "Phishing Website: Spear Phishing Project",
+            "techStack": "DevTools, PHP, HTML",
             "descriptions": [
-                "",
-                "",
-                ""
-            ]
+                "Course project where I had to take on the role of an attacker trying to steal credentials.",
+                "Exploited GitHub by phishing users with a fake login page identical to the real thing.",
+                "Created spear-phishing attempts through emails specified at GitHub users."
+            ],
+            "link": "https://github.com/Jxk0be/stealingYourAnime",
+            "image": "./images/githubPhishing.png"
+        }
+    ],
+    "WIPs": [
+        {
+           "title": "Discord Bot: A Small Community Server Bot",
+           "techStack": "JavaScript, discord.js",
+           "description": "Currently working on core functionality of the bot. Its main purpose will be to manage polling, authentication, and small games."
         },
         {
-            "title": "",
-            "techStack": "",
-            "descriptions": [
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "title": "",
-            "techStack": "",
-            "descriptions": [
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "title": "",
-            "techStack": "",
-            "descriptions": [
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "title": "",
-            "techStack": "",
-            "descriptions": [
-                "",
-                "",
-                ""
-            ]
+
         }
     ]
 }
