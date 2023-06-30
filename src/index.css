@@ -19,3 +19,7 @@ code {
 .grad {
   font-family: 'Montserrat', sans-serif;
 }
+
+.noSelect {
+  user-select: none;
+}
