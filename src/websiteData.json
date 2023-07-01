@@ -45,7 +45,7 @@
                 "Built a complete site around the chess board."
             ],
             "link": "https://github.com/utk-cs340-fall22/Chess",
-            "image": "./images/chessWebsiteGraphic.png"
+            "image": "./images/ChessWebApplication.png"
         },
         {
             "title": "Personal Website React Application",
@@ -56,7 +56,7 @@
                 "Used some additional React packages such as React-Typed and React-Scroll."
             ],
             "link": "https://jxk0be.github.io/Jake-Shoffner/",
-            "image": "./images/websiteThumbnail.png"
+            "image": "./images/personalWebsiteReact.png"
         },
         {
             "title": "YouTube Metadata Machine Learning Research Project",
@@ -67,7 +67,7 @@
                 "Created a research poster and two-page abstract detailing our findings."
             ],
             "link": "https://github.com/Jxk0be/YouTube-Metadata-ML-Research-Project",
-            "image": "./images/researchPaper.png"
+            "image": "./images/youtubeMLProject.png"
         },
         {
             "title": "Phishing Website: Spear Phishing Project",
@@ -78,7 +78,7 @@
                 "Created spear-phishing attempts through emails specified at GitHub users."
             ],
             "link": "https://github.com/Jxk0be/stealingYourAnime",
-            "image": "./images/githubPhishing.png"
+            "image": "./images/githubPhishingWebsite.png"
         }
     ],
     "WIPs": [
