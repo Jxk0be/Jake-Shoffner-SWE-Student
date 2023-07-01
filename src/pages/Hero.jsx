@@ -4,7 +4,7 @@ import Typed from 'react-typed';
 const Hero = () => {
   return (
     <div className='w-full h-full flex justify-between items-center flex-col text-[#F5EFED] md:pl-[80px] md:pr-[50px] md:max-w-[1500px]'>
-      <div className='grid md:grid-rows-1 h-full grid-flow-col w-full grid-rows-2 m-[5vh] gap-x-10 gap-y-12 px-4 md:px-0'>
+      <div className='grid md:grid-rows-1 h-full grid-flow-col w-full grid-rows-2 m-[5vh] gap-x-10 gap-y-12 px-4 lg:px-0'>
                   
         <div className='flex flex-col justify-center md:min-w-[550px] md:h-full h-[300px]'>
 
