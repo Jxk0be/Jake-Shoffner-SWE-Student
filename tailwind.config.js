@@ -13,6 +13,8 @@ module.exports = {
 
       'lg': '1440px',
       // => @media (min-width: 1440px) { ... }
+
+      'xlg': '2000px',
     },
   },
   plugins: [],
