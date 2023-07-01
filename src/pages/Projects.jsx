@@ -51,7 +51,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="box test">
-          <img src={data.projects[0].image} alt="" />
+          <img src={data.projects[1].image} alt="" />
         </div>
 
         <div className="box">
@@ -63,7 +63,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="box">
-          <img src={data.projects[0].image} alt="" />
+          <img src={data.projects[2].image} alt="" />
         </div>
 
 
