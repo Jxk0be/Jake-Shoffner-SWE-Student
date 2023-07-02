@@ -38,45 +38,28 @@
         {
             "title": "Web-Based Chess Engine",
             "techStack": "C++, WebAssembly, JavaScript, TailwindCSS, Svelte",
-            "descriptions": [
-                "A group project for our software engineering course over a semester-long period.",
-                "Created interactive chess board, and UIs for pawn promotion and color selection.",
-                "Developed logical checks for valid moves while connecting our custom chess engine with the front-end chess board.",
-                "Built a complete site around the chess board."
-            ],
+            "description": "This web-based chess engine is an application that enables users to play chess against AI from the browser. It is primarily built using C++, WebAssembly, JavaScript, TailwindCSS, and Svelte. The engine's core functionality, including game logic and advanced AI algorithms, is implemented in C++ and compiled into WebAssembly for use across the web. The UI, designed with JavaScript, TailwindCSS, and Svelte, provides an intuitive and responsive platform.",
             "link": "https://github.com/utk-cs340-fall22/Chess",
             "image": "./images/ChessWebApplication.png"
         },
         {
             "title": "Personal Website React Application",
             "techStack": "React, TailwindCSS",
-            "descriptions": [
-                "My first project learning about front-end frameworks, meant to be updated as I built more things.",
-                "Developed completely with ReactJS and TailwindCSS.",
-                "Used some additional React packages such as React-Typed and React-Scroll."
-            ],
+            "description": "This was my first time ever using React or Tailwind. I mostly aimed to learn the basics of React, thus I took advantage of Tailwind's easy-to-use styling to put my major focus on the mechanics of React. From this, I was able to learn a great deal about React, and still have a fairly flashy UI without having to spend hours using regular CSS. I also used some React-specific libraries to add a little more flair to my project. Overall, I learned to take advantage of the React library to create a web application.",
             "link": "https://jxk0be.github.io/Jake-Shoffner/",
             "image": "./images/personalWebsiteReact.png"
         },
         {
             "title": "YouTube Metadata Machine Learning Research Project",
             "techStack": "Python, Pandas, scikit-learn, Jupyter Notebook",
-            "descriptions": [
-                "Addressed the challenge online creators face with trying to find success on YouTube.",
-                "Used predictive modeling techniques such as regression and classification to identify key factors of success.",
-                "Created a research poster and two-page abstract detailing our findings."
-            ],
+            "description": "We addressed the challenge faced by online creators who rely solely on their YouTube income, which heavily depends on the popularity of their vidoes to generate a satisfactory income. To increase their chances of success, creators must regularly analyze trends and data to identify the most profitable content to create. Our work focused on utilizing predictive modeling techniques such as regression and classification to identify key variables such as video category IDs, view counts, and channel subscribers, and identified the most influential factors on our models.",
             "link": "https://github.com/Jxk0be/YouTube-Metadata-ML-Research-Project",
             "image": "./images/youtubeMLProject.png"
         },
         {
             "title": "Phishing Website: Spear Phishing Project",
             "techStack": "DevTools, PHP, HTML",
-            "descriptions": [
-                "Course project where I had to take on the role of an attacker trying to steal credentials.",
-                "Exploited GitHub by phishing users with a fake login page identical to the real thing.",
-                "Created spear-phishing attempts through emails specified at GitHub users."
-            ],
+            "description": "In this project, I took the role of an attacker to gain a deeper understanding of their thought processes. The goal was to exploit GitHub by executing a spear phishing attack. To accomplish this, I created a convincing phishing website that closely resembled GitHub's official site. Crucially, I ensured that victims, upon visiting the phishing site, were seamlessly redirected to the legitimate site, leaving no trace or suspicion. This project provided valuable insights into the tactics and techniques employed by attackers in compromising user login information.",
             "link": "https://github.com/Jxk0be/stealingYourAnime",
             "image": "./images/githubPhishingWebsite.png"
         }
