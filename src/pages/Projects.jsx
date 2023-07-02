@@ -2,71 +2,24 @@ import React from 'react';
 import data from '../websiteData.json';
 
 const Projects = () => {
-  console.log(data);
   return (
-    // <div className='flex justify-between flex-col text-[#F5EFED] lg:max-w-[1500px] bg-slate-400 lg:ml-[50px] xlg:ml-0'>
-    //   <div className='grid h-screen w-full bg-blue-900 grid-flow-col grid-cols-1 lg:grid-cols-2'>
-
-    //     <div className='drop-shadow-lg bg-red-400 flex flex-row justify-between'>
-    //       <div className='w-[400px]'>
-    //         <h1>Epic</h1>
-    //         <p>{data.projects[0].descriptions[0]}</p>
-    //         <p>{data.projects[0].descriptions[1]}</p>
-    //         <p>{data.projects[0].descriptions[2]}</p>
-    //         <p>{data.projects[0].descriptions[3]}</p>
-    //       </div>
-    //       <div className='h-[300px] flex justify-center items-center w-full'>
-    //         <img src={data.projects[0].image} alt="chcess"></img>
-    //       </div>
-    //     </div>
-
-
-    //   </div>
-    // </div>
-
-    <div className="container">
-
-    <h1 className="heading">our services</h1>
-
-      <div className="box-container">
-        <div className="box">
-          <div>
-            <h3>{data.projects[0].title}</h3>
-            <p>- {data.projects[0].descriptions[0]}</p>
-            <p>- {data.projects[0].descriptions[1]}</p>
-            <p>- {data.projects[0].descriptions[2]}</p>
-            <p>- {data.projects[0].descriptions[3]}</p>
-          </div>
-        </div>
-        <div className="box">
-          <img src={data.projects[0].image} alt="" />
-        </div>
-
-        <div className="box">
-          <div>
-            <h3>{data.projects[1].title}</h3>
-            <p>- {data.projects[1].descriptions[0]}</p>
-            <p>- {data.projects[1].descriptions[1]}</p>
-            <p>- {data.projects[1].descriptions[2]}</p>
-          </div>
-        </div>
-        <div className="box test">
-          <img src={data.projects[1].image} alt="" />
-        </div>
-
-        <div className="box">
-          <div>
-            <h3>{data.projects[2].title}</h3>
-            <p>- {data.projects[2].descriptions[0]}</p>
-            <p>- {data.projects[2].descriptions[1]}</p>
-            <p>- {data.projects[2].descriptions[2]}</p>
-          </div>
-        </div>
-        <div className="box">
-          <img src={data.projects[2].image} alt="" />
-        </div>
-
-
+    <div className='w-full h-full flex justify-center items-center md:pl-[80px] md:pr-[50px] md:max-w-[1500px]'>
+      <div className='grid md:grid-cols-2 grid-cols-1 md:gap-y-[20px] gap-y-[40px] gap-x-10 w-full h-full px-10 pt-[90px] lg:pt-[30px]'>
+        {data.projects.map((projects) => {
+          return(
+            <div key={projects.title} className='w-full h-full rounded-xl bg-black'>
+              <img className="" src={projects.image} alt="" />
+              <div className='bg-black rounded-xl p-3'>
+                {projects.descriptions.map((desc) => {
+                  return(
+                    <p key={desc}>- {desc}</p>
+                  );
+                })}
+              </div>
+            </div>
+          );
+        })}
+        <div className='lg:mb-[30px]'>&nbsp;</div>
       </div>
     </div>
   )
