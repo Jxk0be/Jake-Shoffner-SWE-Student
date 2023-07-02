@@ -7,8 +7,10 @@ const Projects = () => {
       <div className='grid md:grid-cols-2 grid-cols-1 md:gap-y-[20px] gap-y-[40px] gap-x-10 w-full h-full px-10 pt-[90px] lg:pt-[30px]'>
         {data.projects.map((projects) => {
           return(
-            <div key={projects.title} className='w-full h-full rounded-xl bg-black'>
-              <img className="" src={projects.image} alt="" />
+            <div key={projects.title} className='w-full h-full rounded-xl bg-black md:hover:scale-105 duration-300 drop-shadow-xl'>
+              <a href={projects.link} target='_blank' rel="noreferrer">
+                <img src={projects.image} alt="" />
+              </a>
               <div className='bg-black rounded-xl p-3'>
                 {projects.descriptions.map((desc) => {
                   return(
