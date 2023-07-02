@@ -9,7 +9,7 @@ const Navbar = () => {
   const navArray = nav.split("");
 
   return (
-    <div className={`hidden items-center text-[#b3b3b3] text-[17px] font-bold fixed z-30 drop-shadow-xl bg-[#121212] duration-300 h-screen lg:flex justify-center md:w-[170px] ${sidebar ? 'ml-[-120px]' : ''}`}>
+    <div className={`hidden items-center text-[#b3b3b3] text-[17px] font-bold fixed z-50 drop-shadow-xl bg-[#121212] duration-300 h-screen lg:flex justify-center md:w-[170px] ${sidebar ? 'ml-[-120px]' : ''}`}>
       {/* This is the click-able icon that opens the sidebar */}
 
       <div className={`mr-[40px] z-10 flex noSelect justify-between flex-col h-[300px] ${sidebar ? 'opacity-0' : ''}`}>
