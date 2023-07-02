@@ -51,7 +51,7 @@ const Navbar = () => {
         
       </div>
 
-      {sidebar ? <div onClick={() => setSidebar(!sidebar)} className='bg-[#212121] hover:bg-white hover:text-[#212121] font-semibold ml-[-79px] px-1.5 py-1 rounded-xl z-40 cursor-pointer select-none duration-300 items-center flex flex-col text-xl group'>
+      {sidebar ? <div onClick={() => setSidebar(!sidebar)} className='bg-[#212121] hover:bg-white hover:text-[#212121] font-semibold ml-[-79px] px-1.5 py-1 rounded-xl z-40 cursor-pointer select-none duration-150 items-center flex flex-col text-xl group'>
         {navArray.map((x, index) => <h1 key={index}>{x}</h1>)}
       </div> :
        ``}

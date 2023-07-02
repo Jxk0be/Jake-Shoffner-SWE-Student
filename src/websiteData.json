@@ -46,7 +46,7 @@
             "title": "Personal Website React Application",
             "techStack": "React, TailwindCSS",
             "description": "This was my first time ever using React or Tailwind. I mostly aimed to learn the basics of React, thus I took advantage of Tailwind's easy-to-use styling to put my major focus on the mechanics of React. From this, I was able to learn a great deal about React, and still have a fairly flashy UI without having to spend hours using regular CSS. I also used some React-specific libraries to add a little more flair to my project. Overall, I learned to take advantage of the React library to create a web application.",
-            "link": "https://jxk0be.github.io/Jake-Shoffner/",
+            "link": "https://github.com/Jxk0be/Jake-Shoffner",
             "image": "./images/personalWebsiteReact.png"
         },
         {
