@@ -9,7 +9,7 @@ const Navbar = () => {
   const navArray = nav.split("");
 
   return (
-    <div className={`hidden items-center text-[#b3b3b3] text-[17px] font-bold fixed z-30 drop-shadow-xl bg-[#121212] duration-300 h-screen lg:flex justify-center md:w-[170px] ${sidebar ? 'ml-[-120px]' : ''}`}>
+    <div className={`hidden items-center text-[#b3b3b3] text-[17px] font-bold fixed z-50 drop-shadow-xl bg-[#121212] duration-300 h-screen lg:flex justify-center md:w-[170px] ${sidebar ? 'ml-[-120px]' : ''}`}>
       {/* This is the click-able icon that opens the sidebar */}
 
       <div className={`mr-[40px] z-10 flex noSelect justify-between flex-col h-[300px] ${sidebar ? 'opacity-0' : ''}`}>
@@ -51,7 +51,7 @@ const Navbar = () => {
         
       </div>
 
-      {sidebar ? <div onClick={() => setSidebar(!sidebar)} className='bg-[#212121] hover:bg-white hover:text-[#212121] font-semibold ml-[-79px] px-1.5 py-1 rounded-xl z-40 cursor-pointer select-none duration-300 items-center flex flex-col text-xl group'>
+      {sidebar ? <div onClick={() => setSidebar(!sidebar)} className='bg-[#212121] hover:bg-white hover:text-[#212121] font-semibold ml-[-79px] px-1.5 py-1 rounded-xl z-40 cursor-pointer select-none duration-150 items-center flex flex-col text-xl group'>
         {navArray.map((x, index) => <h1 key={index}>{x}</h1>)}
       </div> :
        ``}
