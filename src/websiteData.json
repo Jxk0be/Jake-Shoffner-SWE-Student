@@ -1,36 +1,35 @@
 {
     "experiences": [
         {
-            "jobTitle": "",
-            "company": "",
-            "location": "",
-            "date": "",
+            "jobTitle": "Software Engineer Intern",
+            "company": "Knoxville Utilities Board",
+            "location": "Knoxville, TN",
+            "date": "May 2023 - Present",
             "descriptions": [
-                "",
-                "",
-                ""
+                "Harness tools/software such as Jira, EmberJS, Java EE, Git, Postman, SoapUI, and Oracle SQL Developer under the scope of the Agile-Scrum methodology.",
+                "Contribute to full-stack development by building custom applications and integrations company wide.",
+                "Understand all layers of development from the front-end UI to the low-level enterprise systems/databases."
             ]
         },
         {
-            "jobTitle": "",
-            "company": "",
-            "location": "",
-            "date": "",
+            "jobTitle": "Data Science Teaching Assistant",
+            "company": "University of Tennessee, Knoxville - Department of Anthropology",
+            "location": "Knoxville, TN",
+            "date": "January - May 2022",
             "descriptions": [
-                "",
-                "",
-                ""
+                "Assisted students in understanding data science fundamentals using statistical packages in Python.",
+                "Answered and resolved technical problems asked by students in lab sessions or by email.",
+                "Graded and corrected students' weekly coding assignments."
             ]
         },
         {
-            "jobTitle": "",
-            "company": "",
-            "location": "",
-            "date": "",
+            "jobTitle": "Condensed Matter Physics Research Assistant",
+            "company": "University of Tennessee, Knoxville - Department of Physics",
+            "location": "Knoxville, TN",
+            "date": "February - October 2020",
             "descriptions": [
-                "",
-                "",
-                ""
+                "Worked alongside PI and graduate students in research relating to the field of condensed matter physics.",
+                "Calculated, measured and synthesized compounds needed for experiments within the research group."
             ]
         }
     ],
