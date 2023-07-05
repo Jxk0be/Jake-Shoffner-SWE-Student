@@ -30,10 +30,8 @@ npm start
 
 ## Authors
 
-Contributors names and contact info
-
 Jake Shoffner 
-ex. [@JakeShoffner](https://github.com/Jxk0be)
+[@JakeShoffner](https://github.com/Jxk0be)
 
 ## License
 
