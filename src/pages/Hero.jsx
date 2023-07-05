@@ -17,9 +17,9 @@ const Hero = () => {
           <div className='bg-[#2d363f] p-6 rounded-xl md:hover:scale-105 duration-300 bg-opacity-60'>
             <h1 className='font-bold text-4xl text-[#59A5D8] mb-6'>About Me</h1>
             <p className='grad'>
-              Hi, my name is Jake! I am currently a software engineering intern at <a rel="noreferrer" className="text-[#59A5D8] font-[500] hover:text-[#F5EFED] duration-300" target="_blank" href="https://www.kub.org">KUB</a> where 
+              Hi, my name is Jake! I am currently a software engineering intern at <a rel="noreferrer" className="text-[#59A5D8] font-[500] hover:text-[#F5EFED] duration-300" target="_blank" href="https://www.kub.org/about/about-kub">KUB</a> where 
               I'm learning more about full stack development. In addition, I'm going into my final year of computer science at 
-              the <a rel="noreferrer" className="text-[#59A5D8] font-[500] hover:text-[#F5EFED] duration-300" href="https://www.eecs.utk.edu" target='_blank'>University of Tennessee, Knoxville</a>, 
+              the <a rel="noreferrer" className="text-[#59A5D8] font-[500] hover:text-[#F5EFED] duration-300" href="https://www.eecs.utk.edu/undergraduate/computer-science/" target='_blank'>University of Tennessee, Knoxville</a>, 
               where I plan to graduate in May 2024!
             </p>
             <p className='mt-5 grad'>
