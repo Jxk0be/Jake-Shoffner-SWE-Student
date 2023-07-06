@@ -35,7 +35,7 @@ const Proj = ({data}) => {
                         </div>
                     </div>
 
-                    <div onClick={() => setModal(!modal)} className='w-full h-screen absolute left-0 top-0 flex justify-center items-center z-30'></div>
+                    <div onClick={() => setModal(!modal)} className='w-full h-screen absolute left-0 top-0 flex justify-center items-center z-30 bg-black/30'></div>
                 </>
             :
             ''
