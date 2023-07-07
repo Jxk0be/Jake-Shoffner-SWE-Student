@@ -7,9 +7,9 @@ const Proj = ({data}) => {
   return (
     <>
           {/* // drop-shadow-[0_0px_35px_rgba(89,165,216,0.15)] */}
-            <div key={data.title} className='w-full h-full rounded-xl bg-black/40 md:hover:scale-105 duration-300 drop-shadow-lg'>
-                <img className="cursor-pointer" onClick={() => setModal(!modal)} src={data.image} alt="" />
-                <div onClick={() => setModal(!modal)} className='flex justify-center items-center h-[40px]'>
+            <div key={data.title} className='h-full w-full flex flex-col justify-center items-center rounded-xl md:hover:scale-105 duration-300 drop-shadow-lg'>
+                <img className="cursor-pointer rounded-sm" onClick={() => setModal(!modal)} src={data.image} alt="" />
+                <div onClick={() => setModal(!modal)} className='flex justify-center items-center bg-black/40 w-full p-2 rounded-lg'>
                   <button >Click To Learn More</button>
                 </div> 
             </div>
