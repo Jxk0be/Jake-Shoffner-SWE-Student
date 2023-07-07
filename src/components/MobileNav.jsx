@@ -1,18 +1,44 @@
 import React from 'react'
 import { Icon } from '@iconify/react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const MobileNav = () => {
 
   const [mobile, setMobile] = useState(true);
+  const navOptions = ["Home", "Experience", "Projects"];
 
   return (
-    <div className={`lg:hidden fixed bg-[#121212] flex px-6 justify-between items-center w-full h-[60px] text-[#b3b3b3] z-10`}>
-        <h1>Jake Shoffner</h1>
+    <>
+      <div className={`lg:hidden fixed bg-[#121212] flex px-6 justify-between items-center w-full h-[60px] text-[#b3b3b3] z-50`}>
+        <Link to="/home">
+          <h1>Jake Shoffner</h1>
+        </Link>
         <div onClick={() => setMobile(!mobile)} className='text-[#59A5D8]'>
-          <h1 className='cursor-pointer'><Icon className='text-[35px]' icon="game-icons:multi-directions" /></h1>
+          <h1 className='cursor-pointer hover:rotate-90 duration-300'><Icon className='text-[35px]' icon="game-icons:multi-directions" /></h1>
+        </div>
       </div>
-    </div>
+      {mobile ? 
+      <div className='w-full h-screen text-2xl font-bold fixed bg-black/70 z-10 flex justify-center flex-col items-center'>
+        {navOptions.map((opt) => {
+          return (
+            <Link to={"/" + opt.toLowerCase()}>
+              <h1 onClick={() => setMobile(!mobile)} className='my-2 cursor-pointer'>{opt}</h1>
+            </Link>
+          );
+        })}
+        <a href="https://github.com/Jxk0be" target='_blank' rel="noreferrer">
+          <h1 onClick={() => setMobile(!mobile)} className='my-2 cursor-pointer'>Github</h1>
+        </a>
+
+        <a href="https://www.linkedin.com/in/jacobshoffner/" target='_blank' rel="noreferrer">
+          <h1 onClick={() => setMobile(!mobile)} className='my-2 cursor-pointer'>Linkedin</h1>
+        </a>
+      </div> :
+      ''
+      }
+      
+    </>
   )
 }
 
