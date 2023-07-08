@@ -40,11 +40,12 @@ const Hero = () => {
       {moreInfo ?
         <>
           <div className='w-full h-screen absolute left-0 top-0 flex justify-center items-center'>
-            <div className='bg-black/90 md:w-full md:max-h-[400px] md:max-w-[650px] z-40 p-5 rounded-xl fixed top-0 left-0 md:relative h-screen w-screen md:h-auto md:block flex justify-center items-center flex-col'>
+            <div className='bg-black/90 md:w-full md:max-h-[400px] md:max-w-[650px] text-center z-40 p-5 rounded-xl fixed top-0 left-0 md:relative h-screen w-screen md:h-auto md:block flex justify-center items-center flex-col'>
+              <h1 className='text-2xl font-bold'>More About Me</h1>
             </div>
           </div>
 
-          <div onClick={() => setMoreInfo(!moreInfo)} className='w-full h-screen absolute left-0 top-0 flex justify-center items-center z-30 bg-black/30'></div>
+          <div onClick={() => setMoreInfo(!moreInfo)} className='w-full h-screen absolute left-0 top-0 flex justify-center items-center z-30 bg-black/20'></div>
 
         </>
 :
