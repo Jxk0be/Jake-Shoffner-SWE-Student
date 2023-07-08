@@ -19,7 +19,7 @@ const MobileNav = () => {
         </div>
       </div>
       {mobile ? 
-      <div className='w-full h-screen text-2xl font-bold fixed bg-[#212121] z-10 flex justify-center flex-col items-center lg:hidden text-[#59A5D8]'>
+      <div className='w-full h-screen text-2xl font-bold fixed bg-[#212121] z-40 flex justify-center flex-col items-center lg:hidden text-[#59A5D8]'>
         {navOptions.map((opt) => {
           return (
             <Link to={"/" + opt.toLowerCase()}>
