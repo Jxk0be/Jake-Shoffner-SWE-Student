@@ -1,10 +1,14 @@
 import React from 'react'
 import Typed from 'react-typed';
+import { useState } from 'react';
 
 const Hero = () => {
+  const [moreInfo, setMoreInfo] = useState(false);
+
   return (
-    <div className='w-full h-full flex justify-between items-center flex-col text-[#F5EFED] md:pl-[80px] md:pr-[50px] md:max-w-[1500px]'>
-      <div className='grid lg:grid-rows-1 h-full grid-flow-col w-full grid-rows-2 m-[5vh] gap-x-10 gap-y-12 px-4 lg:px-0'>
+    <>
+      <div className='w-full h-full flex justify-between items-center flex-col text-[#F5EFED] md:pl-[80px] md:pr-[50px] md:max-w-[1500px]'>
+        <div className='grid lg:grid-rows-1 h-full grid-flow-col w-full grid-rows-2 m-[5vh] gap-x-10 gap-y-12 px-4 lg:px-0'>
                   
         <div className='flex flex-col justify-center lg:min-w-[550px] md:h-full h-[300px] items-center lg:items-start'>
             <h1 className='md:text-4xl grad font-[400] text-3xl drop-shadow-lg'>Hello, I'm</h1>
@@ -27,12 +31,27 @@ const Hero = () => {
             explore more about this ever-evolving field.
             </p>
           </div>
-          <div className='p-2 w-full bg-[#121212]/90 rounded-xl flex justify-center items-center text-xl cursor-pointer'>More About Me</div>
+          <div onClick={() => setMoreInfo(!moreInfo)} className='p-2 w-full bg-[#121212]/90 rounded-xl flex justify-center items-center text-xl cursor-pointer'>More About Me</div>
         </div>
 
+        </div>
       </div>
-    </div>
-  )
+
+      {moreInfo ?
+        <>
+          <div className='w-full h-screen absolute left-0 top-0 flex justify-center items-center'>
+            <div className='bg-black/90 md:w-full md:max-h-[400px] md:max-w-[650px] z-40 p-5 rounded-xl fixed top-0 left-0 md:relative h-screen w-screen md:h-auto md:block flex justify-center items-center flex-col'>
+            </div>
+          </div>
+
+          <div onClick={() => setMoreInfo(!moreInfo)} className='w-full h-screen absolute left-0 top-0 flex justify-center items-center z-30 bg-black/30'></div>
+
+        </>
+:
+        ''
+      }
+    </>
+    );
 }
 
 export default Hero
