@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const MobileNav = () => {
 
-  const [mobile, setMobile] = useState(true);
+  const [mobile, setMobile] = useState(false);
   const navOptions = ["Home", "Experience", "Projects"];
 
   return (
@@ -19,11 +19,11 @@ const MobileNav = () => {
         </div>
       </div>
       {mobile ? 
-      <div className='w-full h-screen text-2xl font-bold fixed bg-black/70 z-10 flex justify-center flex-col items-center'>
+      <div className='w-full h-screen text-2xl font-bold fixed bg-[#212121] z-40 flex justify-center flex-col items-center lg:hidden text-[#59A5D8]'>
         {navOptions.map((opt) => {
           return (
             <Link to={"/" + opt.toLowerCase()}>
-              <h1 onClick={() => setMobile(!mobile)} className='my-2 cursor-pointer'>{opt}</h1>
+              <h1 onClick={() => setMobile(!mobile)} className='my-4 cursor-pointer'>{opt}</h1>
             </Link>
           );
         })}

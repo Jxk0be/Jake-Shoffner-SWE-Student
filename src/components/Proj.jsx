@@ -7,7 +7,7 @@ const Proj = ({data}) => {
   return (
     <>
           {/* // drop-shadow-[0_0px_35px_rgba(89,165,216,0.15)] */}
-            <div key={data.title} className='h-full w-full flex flex-col justify-center items-center rounded-xl md:hover:scale-105 duration-300 drop-shadow-lg'>
+            <div key={data.title} className='h-full w-full flex flex-col justify-center items-center rounded-xl lg:hover:scale-105 duration-300 drop-shadow-lg'>
                 <img className="cursor-pointer rounded-sm" onClick={() => setModal(!modal)} src={data.image} alt="" />
                 <div onClick={() => setModal(!modal)} className='flex justify-center items-center bg-black/40 w-full p-2 rounded-lg'>
                   <button >Click To Learn More</button>
@@ -16,7 +16,7 @@ const Proj = ({data}) => {
             {modal ?
                 <>
                    <div className='w-full h-screen absolute left-0 top-0 flex justify-center items-center'>
-                        <div className='bg-black/90 md:w-full md:max-h-[400px] md:max-w-[650px] z-40 p-5 rounded-xl fixed top-0 left-0 md:relative h-screen w-screen md:h-auto md:block flex justify-center items-center flex-col'>
+                        <div className='bg-black/90 md:w-full md:max-h-[400px] md:max-w-[650px] z-30 p-5 rounded-xl fixed top-0 left-0 md:relative h-screen w-screen md:h-auto md:block flex justify-center items-center flex-col'>
                             <h1 className='font-bold text-2xl text-center'>{data.title}</h1>
                             <div className='bg-[#59A5D8] md:h-[1px] h-[2px] mb-3 md:w-auto w-full'>&nbsp;</div>
                             <p className='text-xl font-small'>{data.description}</p>
@@ -35,7 +35,7 @@ const Proj = ({data}) => {
                         </div>
                     </div>
 
-                    <div onClick={() => setModal(!modal)} className='w-full h-screen absolute left-0 top-0 flex justify-center items-center z-30 bg-black/30'></div>
+                    <div onClick={() => setModal(!modal)} className='w-full h-screen absolute left-0 top-0 flex justify-center items-center z-20 bg-black/30'></div>
                 </>
             :
             ''
