@@ -4,7 +4,7 @@ The purpose of this project is to rebuild my old website that was created during
 
 ## Description
 
-This project took a lot of inspiration from the first iteration of my website. Some of the main differences include: using React Router instead of a SPA, data management through JSON instead of hard-coded data, and a major style overhaul with some small CSS animations.
+This project took a lot of inspiration from the first iteration of my website. Some of the main differences include: using React Router instead of a making it one long page, data management through JSON instead of hard-coded text, and a major style overhaul with some small CSS animations.
 
 ## Getting Started
 
