@@ -54,13 +54,13 @@ const Modal = ({data, onClose}) => {
         <div className="flex justify-between items-center text-center w-full pb-5 md:px-5 text-[14px] whitespace-nowrap">
           <p className='w-1/3'>Knoxville, TN</p>
           <a className="w-1/3 underline" href="mailto:jshoffn3@vols.utk.edu">jshoffn3@vols.utk.edu</a>
-          <p className='w-1/3'>978-2087</p>
+          <p className='w-1/3'>(865) 978-2087</p>
         </div>
 
         <h1 className='text-2xl font-bold'>{data.MoreInfo.subTitle}</h1>
         <div className='w-9/12 h-[1px] bg-red-50 mb-3'>&nbsp;</div>
 
-        <div className='md:w-9/12 w-full px-2 flex flex-row justify-between items-center h-[145px]'>
+        <div className='md:w-9/12 w-full px-2 flex flex-row md:justify-between justify-center items-center h-[145px] rounded-md'>
           <div className='h-full whitespace-nowrap min-w-4/12 text-left'>
             <div className={`duration-300 px-2 cursor-pointer my-2 text-xl md:hover:scale-105 text-center font-semibold noSelect ${bsSelector ? 'bg-[#ed08be] scale-105 rounded-md' : ''}`} onClick={() => bsCleanup()}>
               <h1>Basic Skills</h1>
@@ -76,7 +76,7 @@ const Modal = ({data, onClose}) => {
             </div>            
           </div>
 
-          <div className='w-full h-full text-lg font-bold flex ml-5 pl-3 pt-2 bg-black/20 items-start flex-col rounded-xl'>
+          <div className='md:w-full w-1/2 h-full text-lg font-bold flex ml-5 pl-3 pt-2 bg-[#ed08be]/60 items-start flex-col rounded-xl'>
             {bsSelector ?
               data.MoreInfo.overallSkills.map((skills, index) => {
                 return (
