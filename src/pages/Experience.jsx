@@ -34,7 +34,7 @@ const Experience = () => {
 
           <div className=' rounded-lg p-3 font-[400] drop-shadow-lg text-md md:text-lg mb-2 w-full'>
             <div className='flex justify-center items-center z-30 w-full md:h-auto'>
-              <div className="md:h-auto relative w-full h-auto bg-[#6a27b2] rounded-lg flex justify-center items-center flex-col py-5">
+              <div className="md:h-auto relative w-full h-auto bg-[#2f0a56] rounded-lg flex justify-center items-center flex-col py-5">
                 <h1 className='capitalize font-[700] md:text-5xl text-5xl mb-1'>My Experience</h1>
 
                 <Typed className="text-[#ed08be] md:text-2xl font-[500] text-2xl pb-3" strings={['Software engineer...', 'Research Assistant...', 'Teaching Assistant...']} typeSpeed={65} loop backDelay={1800} backSpeed={50}/>

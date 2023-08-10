@@ -42,8 +42,8 @@ const Modal = ({data, onClose}) => {
 
   return (
     <>
-    <div className='flex justify-center items-center z-30 fixed md:w-[600px] w-full h-1/2 md:h-auto'>
-      <div className="md:h-auto relative md:w-full w-full h-auto bg-[#6a27b2] rounded-lg flex justify-center items-center flex-col py-5">
+    <div className='flex justify-center items-center z-30 fixed md:w-[550px] w-full h-1/2 md:h-auto'>
+      <div className="md:h-auto relative md:w-full w-full h-auto bg-[#2f0a56] rounded-lg flex justify-center items-center flex-col py-5">
         <div className='absolute right-0 top-0 pr-3 pt-3 cursor-pointer' onClick={onClose}>
           <Icon className='text-[30px] hover:text-[#ed08be] duration-150' icon="carbon:close-outline" />
         </div>
