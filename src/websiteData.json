@@ -74,5 +74,20 @@
             "techStack": "Svelte, TailwindCSS, ConsumetAPI",
             "description": "Project currently on pause for the summer. The main purpose of this web application is to have an easily accessible tool for the club to search for shows and add them into a list to be randomized for weekly watch parties."
         }
-    ]
+    ],
+    "MoreInfo": {
+        "title": "Jake Shoffner",
+        "subTitle": "My Skills",
+        "myInfo": [
+            "Knoxville, TN",
+            "(865) 978-2087"
+        ],
+        "techSkills":
+        {
+            "frontend": ["React", "Svelte", "Ember", "TailwindCSS"],
+            "languages": ["JavaScript", "C++, C, C#", "Python", "Java"],
+            "toolsOthers": ["Git", "Linux CLI", "Postman", "Github"]
+        },
+        "overallSkills": ["Front-end", "Scrum & Agile", "Problem Solving", "OOP"]
+    }
 }

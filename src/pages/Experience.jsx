@@ -1,36 +1,95 @@
-import React from 'react'
+import Typed  from 'react-typed';
+import React, { useState } from 'react'
 import data from '../websiteData.json';
 
 const Experience = () => {
+  const [sweSelector, setSweSelector] = useState(true);
+  const [taSelector, setTaSelector] = useState(false);
+  const [raSelector, setRaSelector] = useState(false);
+
+  const sweCleanup = () => {
+    setSweSelector(true);
+    setTaSelector(false);
+    setRaSelector(false);
+  }
+
+  const taCleanup = () => {
+    setTaSelector(true);
+    setSweSelector(false);
+    setRaSelector(false);
+  }
+
+  const raCleanup = () => {
+    setRaSelector(true);
+    setTaSelector(false);
+    setSweSelector(false);
+  }
 
   return (
-    <div className='w-full h-full text-[#b3b3b3] flex justify-center flex-col items-center md:max-w-[1500px] md:ml-[80px] md:mr-[80px] lg:mx-[85px] md:pt-[90px] lg:pt-0 px-3 md:px-0 pt-[70px]'>
-      {data.experiences.map((exp) => {
-        return(
-          <div className='h-auto max-h-[600px] bg-[#121212] md:hover:text-[#212121] drop-shadow-xl md:w-7/12 md:min-w-[700px] w-full flex items-center my-2 flex-col rounded-xl py-2 md:hover:bg-[#59A5D8] duration-150' key={exp.jobTitle}>
-            <div className='w-full flex justify-between items-center px-3 flex-col md:flex-row'>
-              <h1 className='underline'>{exp.jobTitle}</h1>
-              <h1>{exp.location}</h1>
+    <>
+      {/* This section of the code is the home page */}
+      <div className='w-full h-screen flex justify-center items-center text-[#FAF9F6] lg:pl-[80px] lg:pr-[50px] md:px-[50px] md:max-w-[1500px]'>
+        <div className='flex flex-col justify-center items-center w-[900px] md:px-0 px-[10px] drop-shadow-lg'>
+
+
+          <div className=' rounded-lg p-3 font-[400] drop-shadow-lg text-md md:text-lg mb-2 w-full'>
+            <div className='flex justify-center items-center z-30 w-full md:h-auto'>
+              <div className="md:h-auto relative w-full h-auto bg-[#2f0a56] rounded-lg flex justify-center items-center flex-col py-5">
+                <h1 className='capitalize font-[700] md:text-5xl text-5xl mb-1'>My Experience</h1>
+
+                <Typed className="text-[#ed08be] md:text-2xl font-[500] text-2xl pb-3" strings={['Software engineer...', 'Research Assistant...', 'Teaching Assistant...']} typeSpeed={65} loop backDelay={1800} backSpeed={50}/>
+
+                <div className='md:w-9/12 w-full px-2 flex flex-row md:justify-between justify-center items-center h-[145px] rounded-md'>
+                  <div className='h-full whitespace-nowrap min-w-4/12 text-left'>
+                    <div className={`duration-300 px-2 cursor-pointer my-2 text-xl md:hover:scale-105 text-center font-semibold noSelect ${sweSelector ? 'bg-[#ed08be] scale-105 rounded-md' : ''}`} onClick={() => sweCleanup()}>
+                      <h1>SWE Intern</h1>
+                    </div>
+                    <div className={`duration-300 px-2 cursor-pointer my-2 text-xl md:hover:scale-105 text-center font-semibold noSelect ${taSelector ? 'bg-[#ed08be] scale-105 rounded-md' : ''}`} onClick={() => taCleanup()}>
+                      <h1>Teaching Assistant</h1>
+                    </div>
+                    <div className={`duration-300 px-2 cursor-pointer my-2 text-xl md:hover:scale-105 text-center font-semibold noSelect ${raSelector ? 'bg-[#ed08be] scale-105 rounded-md' : ''}`} onClick={() => raCleanup()}>
+                      <h1>Research Assistant</h1>
+                    </div>         
+                  </div>
+
+                  <div className='md:w-full w-1/2 h-full text-lg font-bold flex ml-5 pl-3 pt-2 bg-[#ed08be]/60 items-start flex-col rounded-xl'>
+                    {sweSelector ?
+                      data.MoreInfo.overallSkills.map((skills, index) => {
+                        return (
+                          <h1 key={index}>- {skills}</h1>
+                        );
+                      })
+                    :
+                    ''
+                    }
+
+                    {taSelector ?
+                      data.MoreInfo.techSkills.frontend.map((skills, index) => {
+                        return(
+                          <h1 key={index}>- {skills}</h1>
+                        );
+                      }) 
+                    :
+                    ''
+                    }
+
+                    {raSelector ?
+                      data.MoreInfo.techSkills.languages.map((skills, index) => {
+                        return(
+                          <h1 key={index}>- {skills}</h1>
+                        );
+                      })
+                    :
+                    ''
+                    }
+                  </div>
+                </div>
+              </div>
             </div>
-
-          <div className='w-full flex justify-between items-center px-3 pb-2' key={exp.company}>
-            <h1>{exp.company}</h1>
-            <h1>{exp.date}</h1>
-          </div>
-
-          <div className='px-3 min-w-full'>
-            <ul className='text-left'>
-              {exp.descriptions.map((p, index) => {
-                return (<li key={index} ><p>- {p}</p></li>);
-              })}
-            </ul>
           </div>
         </div>
-        );
-      })}
-
-      <div className='mb-5 md:hidden'>&nbsp;</div>
-    </div>
+      </div>
+    </>
   )
 }
 

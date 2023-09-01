@@ -8,7 +8,10 @@ body {
   font-family: 'Ubuntu', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #22262a;
+  /* background-image: radial-gradient(circle, rgba(10,8,17,0.85) 0%, rgba(18,15,30,0.85) 75%), url("./giphy.gif"); */
+  background-image: radial-gradient(circle, rgba(31, 2, 25, 0.85) 0%, rgba(24, 2, 19, 0.85) 79%), url("./giphy.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 code {
@@ -22,4 +25,12 @@ code {
 
 .noSelect {
   user-select: none;
+}
+
+.fluidBG {
+  /* background-image: radial-gradient(circle, rgba(10,8,17,0) 0%, rgba(18,15,30,0.05) 75%), url("./giphy.gif"); */
+  background-image: radial-gradient(circle, rgba(32, 2, 23, 0.55) 0%, rgba(49, 3, 39, 0.65) 79%), url("./giphy.gif");
+
+  background-repeat: no-repeat;
+  background-size: cover;
 }
